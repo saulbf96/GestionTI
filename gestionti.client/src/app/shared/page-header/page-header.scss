@@ -1,0 +1,51 @@
+:host {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: var(--gti-text-3);
+  font-size: 13px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--gti-primary);
+    }
+  }
+
+  .current {
+    color: var(--gti-text);
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  color: var(--gti-text-2);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}

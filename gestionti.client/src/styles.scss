@@ -73,6 +73,15 @@ html {
       outlined-container-shape: 12px,
     )
   );
+  @include mat.sidenav-overrides(
+    (
+      container-background-color: #0b192c,
+      container-shape: 0,
+      container-divider-color: transparent,
+      content-background-color: #f8fafc,
+      content-text-color: #0f172a,
+    )
+  );
 }
 
 // Base

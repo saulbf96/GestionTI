@@ -1,0 +1,24 @@
+<button mat-icon-button type="button" aria-label="Abrir o cerrar el menú" (click)="menuToggle.emit()">
+  <mat-icon>menu</mat-icon>
+</button>
+
+<!-- La búsqueda se conecta a la API con el módulo de Inventario. -->
+<label class="search">
+  <mat-icon aria-hidden="true">search</mat-icon>
+  <input #search type="search" placeholder="Buscar KC, serie o colaborador" aria-label="Buscar KC, serie o colaborador" />
+  <kbd>Ctrl</kbd><kbd>K</kbd>
+</label>
+
+<span class="spacer"></span>
+
+<button mat-icon-button type="button" aria-label="Notificaciones">
+  <mat-icon>notifications</mat-icon>
+</button>
+
+<div class="user">
+  <span class="avatar" aria-hidden="true">{{ initials() }}</span>
+  <div class="user-text">
+    <strong>{{ accountName() }}</strong>
+    <span>{{ roleLabel() }}</span>
+  </div>
+</div>
