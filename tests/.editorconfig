@@ -1,0 +1,8 @@
+# Reglas solo para los proyectos de pruebas.
+[*.cs]
+# Los nombres de prueba usan guiones bajos: Metodo_Escenario_Resultado.
+dotnet_diagnostic.CA1707.severity = none
+# Las pruebas no necesitan ConfigureAwait.
+dotnet_diagnostic.CA2007.severity = none
+# Las clases de prueba deben ser públicas para xUnit.
+dotnet_diagnostic.CA1515.severity = none

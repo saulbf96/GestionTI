@@ -13,6 +13,10 @@
     <PackageVersion Include="Microsoft.AspNetCore.SpaProxy" Version="10.0.15" />
   </ItemGroup>
 
+  <ItemGroup Label="Extensiones">
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.15" />
+  </ItemGroup>
+
   <ItemGroup Label="Infraestructura">
     <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.15" />
     <PackageVersion Include="System.DirectoryServices.Protocols" Version="10.0.15" />
