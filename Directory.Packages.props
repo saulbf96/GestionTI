@@ -1,0 +1,31 @@
+<Project>
+  <!--
+    Versiones de NuGet centralizadas: todos los proyectos toman la versión de aquí.
+    Mantener todo en la línea 10.x (.NET 10 LTS). No subir a 11.x sin aprobación.
+  -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup Label="ASP.NET Core">
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.Negotiate" Version="10.0.15" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.15" />
+    <PackageVersion Include="Microsoft.AspNetCore.SpaProxy" Version="10.0.15" />
+  </ItemGroup>
+
+  <ItemGroup Label="Infraestructura">
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.15" />
+    <PackageVersion Include="System.DirectoryServices.Protocols" Version="10.0.15" />
+    <!-- Reemplaza la 9.0.11 que trae Microsoft.Data.SqlClient (vulnerabilidades GHSA-2fmv-rv2c-59x7 y GHSA-846f-f764-76mx) -->
+    <PackageVersion Include="System.Security.Cryptography.Pkcs" Version="10.0.15" />
+  </ItemGroup>
+
+  <ItemGroup Label="Pruebas">
+    <PackageVersion Include="coverlet.collector" Version="6.0.4" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="10.0.15" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageVersion Include="NSubstitute" Version="6.2.0" />
+    <PackageVersion Include="xunit" Version="2.9.3" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.4" />
+  </ItemGroup>
+</Project>
