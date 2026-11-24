@@ -1,7 +1,15 @@
 <Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/GestionTI.Application.Tests/GestionTI.Application.Tests.csproj" />
+    <Project Path="tests/GestionTI.Domain.Tests/GestionTI.Domain.Tests.csproj" />
+    <Project Path="tests/GestionTI.Integration.Tests/GestionTI.Integration.Tests.csproj" />
+  </Folder>
+  <Project Path="GestionTI.Application/GestionTI.Application.csproj" />
   <Project Path="gestionti.client/gestionti.client.esproj">
     <Build />
     <Deploy />
   </Project>
+  <Project Path="GestionTI.Domain/GestionTI.Domain.csproj" />
+  <Project Path="GestionTI.Infrastructure/GestionTI.Infrastructure.csproj" />
   <Project Path="GestionTI.Server/GestionTI.Server.csproj" />
 </Solution>
