@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "d975a7c1-0b7f-4bb0-993f-d7ebc54b0035"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -10,13 +11,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
+          "style": "scss"
         }
       },
       "root": "",
@@ -35,8 +30,12 @@
               }
             ],
             "styles": [
-              "src/styles.css"
-            ]
+              "@fontsource-variable/plus-jakarta-sans/index.css",
+              "@fontsource-variable/jetbrains-mono/index.css",
+              "material-symbols/outlined.css",
+              "src/styles.scss"
+            ],
+            "inlineStyleLanguage": "scss"
           },
           "configurations": {
             "production": {
