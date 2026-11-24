@@ -1,9 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <SpaRoot>..\gestionti.client</SpaRoot>
     <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
     <SpaProxyServerUrl>https://localhost:63375</SpaProxyServerUrl>
+    <UserSecretsId>0000c562-51d5-4596-8c88-c564fd3d8b1e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
