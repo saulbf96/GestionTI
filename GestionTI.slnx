@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="gestionti.client/gestionti.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="GestionTI.Server/GestionTI.Server.csproj" />
+</Solution>
