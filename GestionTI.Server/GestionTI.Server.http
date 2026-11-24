@@ -1,6 +1,7 @@
-@GestionTI.Server_HostAddress = http://localhost:5087
+@GestionTI.Server_HostAddress = https://localhost:7159
 
-GET {{GestionTI.Server_HostAddress}}/weatherforecast/
+# Documento OpenAPI (solo en desarrollo)
+GET {{GestionTI.Server_HostAddress}}/openapi/v1.json
 Accept: application/json
 
 ###
