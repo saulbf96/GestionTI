@@ -3,9 +3,9 @@ import { Component, signal } from '@angular/core';
 @Component({
   selector: 'app-root',
   standalone: false,
-  styleUrl: './app.css',
+  styleUrl: './app.scss',
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('Gestión de TI');
+  protected readonly title = signal('GestiÃ³n de TI');
 }
